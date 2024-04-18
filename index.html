@@ -12,7 +12,7 @@
         <nav>
             <ul class="navigation-list">
                 <li><a href="#home" class="navigation-list__item">Home</a></li>
-                <li><a href="#about" class="navigation-list__item">About Me</a></li>
+                <li><a href="#about" class="navigation-list__item">Skills</a></li>
                 <li><a href="#work" class="navigation-list__item">Work</a></li>
                 <li><a href="#contact" class="navigation-list__item">Contact</a></li>
             </ul>
@@ -31,16 +31,47 @@
             </article>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="about">
-            <h1>About Me</h1>
-            <p>This page is about myself. This is what I enjoy doing:</p>
-            <ul class="about-list">
-                <li>Front-end development</li>
-                <li>Back-end development</li>
-                <li>E-commerce</li>
-                <li>Analytics</li>
-            </ul>
+            <h1>Skills and CV</h1>
+           
+            
+                <ul class="about-list">
+                    <li>Languages:</li>
+                    <ul>
+                        <li>JavaScript, TypeScript</li>
+                        <li>HTML, CSS, Angular, React Native, Redux, Bootstrap, Tailwind, SASS</li>
+                    </ul>
+                    <li>Backend:</li>
+                    <ul>
+                        <li>Node.js, Express, PostgreSQL, MongoDB, Firebase, AWS Lambda</li>
+                    </ul>
+                    <li>Testing and Monitoring:</li>
+                    <ul>
+                        <li>Jest, Enzyme, React Testing Library, Jest-Cucumber, Puppeteer, Atatus</li>
+                    </ul>
+                    <li>Tools:</li>
+                    <ul>
+                        <li>GitHub, Git version control, Swagger API documentation, Trello Kanban board, Adobe CS</li>
+                    </ul>
+                    <li>Data Analytics:</li>
+                    <ul>
+                        <li>Google Analytics, YouTube Analytics, Amazon Analytics, SQL + Tableau</li>
+                    </ul>
+                    <li>Ads/SEO:</li>
+                    <ul>
+                        <li>AdWords/Youtube, Facebook/Instagram, Telegram, Affiliate marketing, Semrush</li>
+                    </ul>
+                    <li>Data Migration:</li>
+                    <ul>
+                        <li>Import/Export - CSV, YML, XML, data scraping</li>
+                    </ul>
+                    <li>Languages:</li>
+                    <ul>
+                        <li>English – Highly Proficient. Russian – Native. Ukrainian – Native</li>
+                    </ul>
+                </ul>
+           
+           
             <a href="#" class="button" download>Download my CV</a>
         </section>
 
@@ -96,25 +127,26 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h1>Contact Me</h1>
-            <div class="contact__method">
-                <section class="contact__method--info">
-                    <h2 id="contact-name">Evhenii Samonin</h2>
-                    <p>Mittelstrasse<br>54<br>Norderstedt, 27800<br>Germany<br><br><a href="tel:+5 555 555 5555">Tel +5 555 555 5555</a><br><a href="mailto:e.samonin1986@gmail.com">e.samonin1986@gmail.com</a></p>
-                </section>
-                <form action="" method="post" class="contact__method--form" id="contact-form">
-                    <label class="contact-label" for="contact-email">E-mail: </label>
-                    <input class="contact-input" type="email" id="contact-email" required>
-                    <label class="contact-label" for="contact-tel">Telephone: </label>
-                    <input class="contact-input" type="tel" id="contact-tel" pattern="\{d3}[\-]\{d3}[\-]\{d4}">
-                    <label class="contact-label" for="contact-message">Message: </label>
-                    <textarea class="contact-textarea" maxlength="240" id="contact-message" required></textarea>
-                    <input class="submit-button" type="submit" value="Send Message">
-                </form>
-            </div>
-        </section>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h1>Contact Me</h1>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2 id="contact-name">Evhenii Samonin</h2>
+            <p>Mittelstrasse<br>54<br>Norderstedt, 27800<br>Germany<br><br><a href="tel:+5 555 555 5555">Tel +5 555 555 5555</a><br><a href="mailto:e.samonin1986@gmail.com">e.samonin1986@gmail.com</a></p>
+        </div>
+        <form action="" method="post" class="contact-form" id="contact-form">
+            <label class="contact-label" for="contact-email">E-mail: </label>
+            <input class="contact-input" type="email" id="contact-email" required>
+            <label class="contact-label" for="contact-tel">Telephone: </label>
+            <input class="contact-input" type="tel" id="contact-tel" pattern="\{d3}[\-]\{d3}[\-]\{d4}">
+            <label class="contact-label" for="contact-message">Message: </label>
+            <textarea class="contact-textarea" maxlength="240" id="contact-message" required></textarea>
+            <input class="submit-button" type="submit" value="Send Message">
+        </form>
+    </div>
+</section>
+
     </main>
 
     <!-- Footer -->
