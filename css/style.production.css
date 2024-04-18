@@ -99,32 +99,55 @@ main {
 
 /* About Section */
 .about {
-    margin-top: 200px; /* Add margin to the top of the section */
+    margin-top: 100px; /* Add margin to the top of the section */
     margin-bottom: 100px; /* Add margin to the bottom of the section */
-    padding-top: 100px; /* Add padding to the top of the section */
+    padding-top: 50px; /* Add padding to the top of the section */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
 .about-list {
-    list-style: none;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.skills-table {
-    margin: 0 auto;
-    outline: 2px solid #2c3333;
+.about-list:hover {
+    transform: translateY(-5px);
 }
 
-.skills-table__head--item {
-    background-color: #a5c9ca;
-    font-weight: 700;
+.about-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.about-button {
+    margin-top: 50px; /* Move the button down */
 }
 
 /* Work Section */
 .work {
-    padding-top: 100px; /* Add padding to the top of the section */
-    padding-bottom: 100px; /* Add padding to the bottom of the section */
+    margin-top: 100px; /* Add margin to the top of the section */
+    margin-bottom: 100px; /* Add margin to the bottom of the section */
+    padding-top: 50px; /* Add padding to the top of the section */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,47 +155,64 @@ main {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Set two columns with equal width */
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two cards per row */
     grid-gap: 20px;
     justify-content: center;
 }
 
 .project-card {
-    background-color: #f6f6f6;
+    background-color: #f7f7f7; /* Match background color with the about section */
     padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 300px; /* Set maximum width */
+    border-radius: 10px; /* Match border radius with the about section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensure buttons are pushed to the bottom */
+    max-width: 300px; /* Set maximum width to 300px */
+    width: 100%; /* Ensure cards fill the available space */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
 /* Adjust text size for consistency */
 .project-card h2 {
-    font-size: 20px;
-    margin-bottom: 10px; /* Add margin bottom */
+    font-size: 24px; /* Match font size with the about section */
+    margin-bottom: 10px;
 }
 
 .project-card p {
-    font-size: 16px;
+    font-size: 16px; /* Match font size with the about section */
+    flex-grow: 1; /* Allow the description to grow */
 }
 
 .project-card .buttons {
-    margin-top: auto; /* Push buttons to the bottom */
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
+    justify-content: center;
+    margin-top: auto; /* Push buttons to the bottom */
 }
 
 .project-card .buttons a {
     display: inline-block;
     margin: 0 5px; /* Adjust margin between buttons */
+    background-color: #357b70; /* Match button background color */
+    color: white; /* Match button text color */
+    padding: 10px 20px; /* Match button padding */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
+
+.project-card .buttons a:hover {
+    background-color: #489c79; /* Darken button color on hover */
+}
+
 /* Contact Section */
 .contact {
     margin-top: 100px; /* Add margin to the top of the section */
     margin-bottom: 100px; /* Add margin to the bottom of the section */
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto; /* Center horizontally */
     text-align: center;
 }
@@ -228,7 +268,7 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    height: 40px!important;
+    height: 40px !important; /* Adjusted height */
 }
 
 .submit-button:hover {
@@ -249,30 +289,12 @@ main {
         margin-right: 20px;
     }
 }
+
 /* Footer */
 .page-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.submit-button {
-    background-color: #a5c9ca;
-    color: #2c3333;
-    font-size: 16px;
-    width: 150px;
-    height: 30px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.submit-button:hover {
-    background-color: rgba(165, 201, 202, 0.8);
-}
-
-.submit-button:active {
-    background-color: #395b64;
-    color: #e7f6f2;
 }
 
 /* Links */
@@ -281,7 +303,8 @@ a {
     transition: 0.5s opacity;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     text-decoration: none;
     opacity: 0.6;
 }
