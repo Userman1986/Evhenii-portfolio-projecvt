@@ -1,62 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width-devide-width, initial-scale=1">
-
-        <title>Evhenii portfolio website</title>
-      </head>
-    <body>
-      <header class="page-header">
-        <img src="./img/logo.svg" alt="my logo" class="page-header__logo">
-        <nav class="page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="./index.html" role="menuitem"
-                        class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="./about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                </li>
-                <li role="presentation">
-                    <a href="./work.html" role="menuitem" class="navigation-list__item">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="./contacts.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evhenii Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="page-header">
+        <nav>
+            <ul class="navigation-list">
+                <li><a href="#home" class="navigation-list__item">Home</a></li>
+                <li><a href="#about" class="navigation-list__item">About Me</a></li>
+                <li><a href="#work" class="navigation-list__item">Work</a></li>
+                <li><a href="#contact" class="navigation-list__item">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="profile">
-      <img src="./img/profile.jpg" class="profile__portrait" alt="Some photo">
-      <article>
-          <h1 class="profile__header">Hello there!</h1>
-          <p class="profile__text">
-              My name is Evhenii. I am a <span class="profile__text--web">&lt;web&gt;</span> developer from
-              Germany, Hamburg.
-          </p>
-          <a href="./work.html" profile="profile__text">Check out some of my code.</a>
-      </article>
-  </main>
-<footer class="page-footer">
+    <!-- Main content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="profile">
+            <img src="./img/profile.jpg" class="profile__portrait" alt="Profile picture">
+            <article>
+                <h1 class="profile__header">Hello there!</h1>
+                <p class="profile__text">My name is Evhenii. I am a web developer from Germany, Hamburg.</p>
+                <a href="#work" class="profile__link">Check out some of my code.</a>
+            </article>
+        </section>
 
-    <p>Find me on</p>
-    <section class="social-media">
-    <!-- Github logo -->
-    <img src="img/github_icon.svg" alt="github">
-    <!-- Twitter logo -->
-    <img src="img/twitter_icon.svg" alt="twitter">
-    <!-- LinkedIn logo -->
-    <img src="img/linkedin_icon.svg" alt="linkedin">
-</section>  
-</footer>
-<script src="js/tota11y.min.js"></script>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h1>About Me</h1>
+            <p>This page is about myself. This is what I enjoy doing:</p>
+            <ul class="about-list">
+                <li>Front-end development</li>
+                <li>Back-end development</li>
+                <li>E-commerce</li>
+                <li>Analytics</li>
+            </ul>
+            <a href="#" class="button" download>Download my CV</a>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="work">
+            <h1>My Work</h1>
+            <div class="projects">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h2>Meet App</h2>
+                    <p>I built this app to learn how to use Google Calendar API. It's a simple app that shows the user's upcoming events. It's built with React and AWS.</p>
+                    <div class="buttons">
+                        <a href="#" target="_blank" class="button">GitHub</a>
+                        <a href="#" target="_blank" class="button">Live</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h2>Pokemon App</h2>
+                    <p>A simple web app that shows a list of Pokemon. It's built with HTML, CSS, JavaScript and JQuery. It fetches data from an PokéAPI and allows the user to search for a specific Pokemon.</p>
+                    <div class="buttons">
+                        <a href="#" target="_blank" class="button">GitHub</a>
+                        <a href="#" target="_blank" class="button">Live</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h2>Chat App</h2>
+                    <p>This project is a chat application built with React Native, designed for both iOS and Android platforms. It features real-time messaging, image sharing, location sharing, and audio messages, integrating Firebase for backend services and expo-av for audio playback functionalities.</p>
+                    <div class="buttons">
+                        <a href="#" target="_blank" class="button">GitHub</a>
+                        <a href="#" target="_blank" class="button">Live</a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <h2>MyFlix Angular</h2>
+                    <p>Angular application designed to help users discover and manage their favorite movies. This app allows users to view movie details, manage their profiles.</p>
+                    <div class="buttons">
+                        <a href="#" target="_blank" class="button">GitHub</a>
+                        <a href="#" target="_blank" class="button">Live</a>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <h2>Movie App</h2>
+                    <p>A full-stack app that shows a list of movies. It's built with React, MongoDB, Express and Node.js. It has user login, signup and edit profile functions. It fetches data from an API and allows the user to search for a specific movie. It also allows the user to add a movie to the favorites list.</p>
+                    <div class="buttons">
+                        <a href="#" target="_blank" class="button">GitHub</a>
+                        <a href="#" target="_blank" class="button">Live</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h1>Contact Me</h1>
+            <div class="contact__method">
+                <section class="contact__method--info">
+                    <h2 id="contact-name">Evhenii Samonin</h2>
+                    <p>Mittelstrasse<br>54<br>Norderstedt, 27800<br>Germany<br><br><a href="tel:+5 555 555 5555">Tel +5 555 555 5555</a><br><a href="mailto:e.samonin1986@gmail.com">e.samonin1986@gmail.com</a></p>
+                </section>
+                <form action="" method="post" class="contact__method--form" id="contact-form">
+                    <label class="contact-label" for="contact-email">E-mail: </label>
+                    <input class="contact-input" type="email" id="contact-email" required>
+                    <label class="contact-label" for="contact-tel">Telephone: </label>
+                    <input class="contact-input" type="tel" id="contact-tel" pattern="\{d3}[\-]\{d3}[\-]\{d4}">
+                    <label class="contact-label" for="contact-message">Message: </label>
+                    <textarea class="contact-textarea" maxlength="240" id="contact-message" required></textarea>
+                    <input class="submit-button" type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <section class="social-media">
+            <!-- Social Media Icons -->
+            <img src="img/github_icon.svg" alt="github">
+            <img src="img/twitter_icon.svg" alt="twitter">
+            <img src="img/linkedin_icon.svg" alt="linkedin">
+        </section>
+    </footer>
+
+    <script src="js/scroll.js"></script>
 </body>
-
 </html>
