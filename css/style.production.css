@@ -192,6 +192,7 @@ main {
 .project-card h2 {
     font-size: 24px; /* Match font size with the about section */
     margin-bottom: 10px;
+    text-align: center; /* Center align the text */
 }
 
 .project-card p {
